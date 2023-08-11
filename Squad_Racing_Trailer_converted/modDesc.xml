@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="40">
+    <author>winston9587</author>
+    <version>1.0.0.0</version>
+    <title>Moving Trailer</title>
+    <description>Moving Trailer</description>
+    <iconFilename>store_United.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <l10n>
+        <text name="ramp_open">
+            <en>Open Door and Add Ramps</en>
+            <de>In Rampen</de>
+            <es>Poner rampas</es>
+        </text>
+        <text name="ramp_close">
+            <en>Close Door and Remove Ramps</en>
+            <es>Quitar rampas</es>
+        </text>
+        <text name="winston9587">
+            <en>winston9587 Mods</en>
+            <de>winston9587 Mods</de>
+        </text>
+    </l10n>
+    <extraSourceFiles>
+        <sourceFile filename="scripts/addStoreCategorie.lua"/>
+    </extraSourceFiles>
+    <specializations>
+        <specialization name="selectable" className="selectable" filename="scripts/selectable.lua"/>
+    </specializations>
+    <vehicleTypes>
+        <type name="United_Trailer" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="attacherJoints"/>
+            <specialization name="lights"/>
+            <specialization name="attachable"/>
+            <specialization name="animatedVehicle"/>
+            <specialization name="cylindered"/>
+            <specialization name="foldable"/>
+            <specialization name="cover"/>
+            <specialization name="washable"/>
+            <specialization name="mountable"/>
+            <specialization name="selectable"/>
+        </type>
+    </vehicleTypes>
+    <storeItems>
+        <storeItem xmlFilename="RacingTrailer.xml" rootNode="vehicle"/>
+    </storeItems>
+    <brands>
+        <brand name="WINSTON" title="winston9587" image="brand.dds"/>
+    </brands>
+</modDesc>

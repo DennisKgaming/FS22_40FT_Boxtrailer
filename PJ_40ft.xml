@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="dynamicMountAttacherTrailer">
+    <annotation/>
+	
+	<description>
+        <en>CJ Trailer TFSGROUP 1</en>
+        <de>CJ Trailer TFSGROUP 1</de>
+    </description>
+	
+	<storeData>
+        <name>
+            <en>CJ Trailer TFSGROUP 1</en>
+            <de>CJ Trailer TFSGROUP 1</de>
+        </name>
+        <functions>
+            <function>$l10n_function_lowLoader</function>
+        </functions>
+        <specs/>
+        <image>United.dds</image>
+        <price>2000</price>
+        <dailyUpkeep>10</dailyUpkeep>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>TFSGROUP</brand>
+        <category>trailers</category>
+    </storeData>
+
+	    <base>
+        <typeDesc>$l10n_typeDesc_lowLoader</typeDesc>
+		<filename>PJ_40ft.i3d</filename>
+		<size width="4" length="20.0" lengthOffset="-1.0"/>
+        <components>
+            <component centerOfMass="0 0.45 0" solverIterationCount="10" mass="5800" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+        </schemaOverlay>
+    </base>
+
+	    <wheels>
+        <wheelConfigurations>
+            <!-- 245/70 R 17,5 -->
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+				<wheels>
+                    <wheel isLeft="true" hasTireTracks="true" >
+                        <physics tipOcclusionAreaGroupId="1" width="0.275" radius="0.4" restLoad="0.9" repr="0>0|0"   driveNode="0>0|0|0"   transRatio="1" forcePointRatio="0.5" initialCompression="12" suspTravel="0.2" spring="175" damper="70" frictionScale="1.5" mass="2" />
+                    </wheel>
+					<wheel isLeft="true" hasTireTracks="true" >
+                        <physics tipOcclusionAreaGroupId="1" width="0.275" radius="0.4" restLoad="0.9" repr="0>0|1"   driveNode="0>0|1|0"   transRatio="1" forcePointRatio="0.5" initialCompression="12" suspTravel="0.2" spring="175" damper="70" frictionScale="1.5" mass="2" />
+                    </wheel>
+					<wheel isLeft="true" hasTireTracks="true" >
+						<physics tipOcclusionAreaGroupId="1" width="0.275" radius="0.4" restLoad="0.9" repr="0>0|2"   driveNode="0>0|2|0"   transRatio="1" forcePointRatio="0.5" initialCompression="12" suspTravel="0.2" spring="175" damper="70" frictionScale="1.5" mass="2" />
+                    </wheel>
+					<wheel isLeft="true" hasTireTracks="true" >
+                        <physics tipOcclusionAreaGroupId="1" width="0.275" radius="0.4" restLoad="0.9" repr="0>0|3"   driveNode="0>0|3|0"   transRatio="1" forcePointRatio="0.5" initialCompression="12" suspTravel="0.2" spring="175" damper="70" frictionScale="1.5" mass="2" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+	</wheels>
+	<designConfigurations>
+        <designConfiguration name="CRISTALINE" price="500"/>
+        <designConfiguration name="TFE" price="500">
+            <objectChange node="0>26|7" visibilityActive="true"/>
+            <objectChange node="0>26|0" visibilityActive="false"/>
+            <objectChange node="0>22|1" visibilityActive="true"/>
+            <objectChange node="0>22|0" visibilityActive="false"/>
+            <objectChange node="0>21|1" visibilityActive="true"/>
+            <objectChange node="0>21|0" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="MAITRES LAITIERS" price="500">
+            <objectChange node="0>26|8" visibilityActive="true"/>
+            <objectChange node="0>26|0" visibilityActive="false"/>
+            <objectChange node="0>22|2" visibilityActive="true"/>
+            <objectChange node="0>22|0" visibilityActive="false"/>
+            <objectChange node="0>21|2" visibilityActive="true"/>
+            <objectChange node="0>21|0" visibilityActive="false"/>
+        </designConfiguration>
+    </designConfigurations>
+	<attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>27" jointType="semitrailer" isDefaultLowered="true" allowsLowering="false"/>
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+        <brakeForce>0.5</brakeForce>
+    </attachable>
+
+    <lights>
+
+        <defaultLights>
+            <defaultLight shaderNode="red1" lightTypes="0" />
+            <defaultLight shaderNode="red2" lightTypes="0" />
+            <defaultLight shaderNode="red3" lightTypes="0" />
+            <defaultLight shaderNode="red4" lightTypes="0" />
+            <defaultLight shaderNode="red5" lightTypes="0" />	
+            <defaultLight shaderNode="red6" lightTypes="0" />
+            <defaultLight shaderNode="red7" lightTypes="0" />
+            <defaultLight shaderNode="red8" lightTypes="0" />
+            <defaultLight shaderNode="red9" lightTypes="0" />	
+            <defaultLight shaderNode="red10" lightTypes="0" />
+            <defaultLight shaderNode="red11" lightTypes="0" />			
+            <defaultLight shaderNode="red12" lightTypes="0" />
+            <defaultLight shaderNode="red13" lightTypes="0" />	
+            <defaultLight shaderNode="red14" lightTypes="0" />
+            <defaultLight shaderNode="red15" lightTypes="0" />	
+            <defaultLight shaderNode="red16" lightTypes="0" />	
+            <defaultLight shaderNode="red17" lightTypes="0" />	
+            <defaultLight shaderNode="red18" lightTypes="0" />	
+            <defaultLight shaderNode="red19" lightTypes="0" />	
+            <defaultLight shaderNode="red20" lightTypes="0" />	
+            <defaultLight shaderNode="red21" lightTypes="0" />
+            <defaultLight shaderNode="red22" lightTypes="0" />
+            <defaultLight shaderNode="red23" lightTypes="0" />
+            <defaultLight shaderNode="red24" lightTypes="0" />	
+            <defaultLight shaderNode="red25" lightTypes="0" />	
+            <defaultLight shaderNode="red26" lightTypes="0" />
+            <defaultLight shaderNode="red27" lightTypes="0" />
+            <defaultLight shaderNode="red28" lightTypes="0" />
+            <defaultLight shaderNode="red29" lightTypes="0" />	
+            <defaultLight shaderNode="red30" lightTypes="0" />	
+            <defaultLight shaderNode="red31" lightTypes="0" />	
+            <defaultLight shaderNode="red32" lightTypes="0" />	
+            <defaultLight shaderNode="red33" lightTypes="0" />	
+            <defaultLight shaderNode="red34" lightTypes="0" />	
+            <defaultLight shaderNode="red35" lightTypes="0" />	
+            <defaultLight shaderNode="red36" lightTypes="0" />	
+			<defaultLight shaderNode="red37" lightTypes="0" />	
+			<defaultLight shaderNode="red38" lightTypes="0" />	
+			<defaultLight shaderNode="red39" lightTypes="0" />	
+            <defaultLight shaderNode="red40" lightTypes="0" />	
+            <defaultLight shaderNode="red41" lightTypes="0" />
+            <defaultLight shaderNode="red42" lightTypes="0" />	
+            <defaultLight shaderNode="red43" lightTypes="0" />
+            <defaultLight shaderNode="red44" lightTypes="0" />
+            <defaultLight shaderNode="red45" lightTypes="0" />	
+            <defaultLight shaderNode="red46" lightTypes="0" />	
+            <defaultLight shaderNode="red47" lightTypes="0" />	
+            <defaultLight shaderNode="red48" lightTypes="0" />	
+            <defaultLight shaderNode="red49" lightTypes="0" />	
+            <defaultLight shaderNode="red80" lightTypes="0" />
+            <defaultLight shaderNode="red81" lightTypes="0" />	
+            <defaultLight shaderNode="red82" lightTypes="0" />
+            <defaultLight shaderNode="red83" lightTypes="0" />
+            <defaultLight shaderNode="red84" lightTypes="0" />	
+            <defaultLight shaderNode="red85" lightTypes="0" />	
+            <defaultLight shaderNode="red86" lightTypes="0" />	
+            <defaultLight shaderNode="red87" lightTypes="0" />	
+            <defaultLight shaderNode="red88" lightTypes="0" />	
+            <defaultLight shaderNode="red89" lightTypes="0" />
+            <defaultLight shaderNode="red90" lightTypes="0" />	
+            <defaultLight shaderNode="red91" lightTypes="0" />
+            <defaultLight shaderNode="red92" lightTypes="0" />
+            <defaultLight shaderNode="red93" lightTypes="0" />	
+            <defaultLight shaderNode="red94" lightTypes="0" />	
+            <defaultLight shaderNode="red95" lightTypes="0" />	
+            <defaultLight shaderNode="red96" lightTypes="0" />	
+            <defaultLight shaderNode="red97" lightTypes="0" />	
+            <defaultLight shaderNode="red98" lightTypes="0" />		
+			<defaultLight shaderNode="red99" lightTypes="0" />
+			<defaultLight shaderNode="red100" lightTypes="0" />
+			<defaultLight shaderNode="red101" lightTypes="0" />		
+			<defaultLight shaderNode="Side_Marker1" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker2" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker3" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker4" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker5" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker6" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker7" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker8" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker9" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker10" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker11" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker12" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker13" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker14" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker15" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker16" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker17" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker18" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker19" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker20" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker21" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker22" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker23" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker24" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker25" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker26" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker27" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker28" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker29" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker30" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker31" lightTypes="0" />
+			<defaultLight shaderNode="Side_Marker33" lightTypes="0" />
+			<defaultLight shaderNode="Side_Markertop1" lightTypes="0" />
+			<defaultLight shaderNode="Side_Markertop2" lightTypes="0" />
+			<defaultLight shaderNode="Side_Markertop3" lightTypes="0" />
+			<defaultLight shaderNode="Side_Markertop4" lightTypes="0" />
+			<defaultLight shaderNode="Side_Markertop5" lightTypes="0" />
+			<defaultLight shaderNode="Side_Markertop6" lightTypes="0" />
+			<defaultLight shaderNode="Side_Markertop7" lightTypes="0" />
+			<defaultLight shaderNode="Side_Markertop8" lightTypes="0" />
+			
+        </defaultLights>
+        <turnLights>
+            <turnLightLeft shaderNode="turnLightleft" />	
+            <turnLightRight shaderNode="turnLightright" />		
+			<turnLightRight shaderNode="turnLightright1" />	
+            <turnLightRight shaderNode="turnLightright2" />	
+			<turnLightRight shaderNode="turnLightright3" />	
+            <turnLightRight shaderNode="turnLightright4" />		
+            <turnLightLeft shaderNode="turnLightleft1" />	
+            <turnLightLeft shaderNode="turnLightleft2" />	
+            <turnLightLeft shaderNode="turnLightleft3" />	
+            <turnLightLeft shaderNode="turnLightleft4" />			
+        </turnLights>
+		<brakeLights>		
+			<brakeLight shaderNode="red18" intensity="50"/>	
+			<brakeLight shaderNode="red19" intensity="50"/>			
+			<brakeLight shaderNode="red17" intensity="50"/>	
+			<brakeLight shaderNode="red12" intensity="50"/>	
+			<brakeLight shaderNode="red13" intensity="50"/>	
+			<brakeLight shaderNode="red14" intensity="50"/>	
+			<brakeLight shaderNode="red16" intensity="50"/>	
+			<brakeLight shaderNode="red77" intensity="50"/>			
+			<brakeLight shaderNode="red78" intensity="50"/>	
+			<brakeLight shaderNode="red32" intensity="50"/>	
+			<brakeLight shaderNode="red34" intensity="50"/>			
+			<brakeLight shaderNode="red35" intensity="50"/>	
+			<brakeLight shaderNode="red33" intensity="50"/>	
+			<brakeLight shaderNode="red86" intensity="50"/>	
+			<brakeLight shaderNode="red87" intensity="50"/>			
+			<brakeLight shaderNode="red85" intensity="50"/>	
+			<brakeLight shaderNode="red84" intensity="50"/>	
+			<brakeLight shaderNode="red80" intensity="50"/>	
+			<brakeLight shaderNode="red81" intensity="50"/>	
+			<brakeLight shaderNode="red82" intensity="50"/>	
+        </brakeLights>		
+		
+		<reverseLights>
+            <reverseLight shaderNode="reverse_static" intensity="40"/>
+        </reverseLights>
+    </lights>
+	
+	
+    <dynamicMountAttacherTrigger triggerNode="0>6" rootNode="0>" jointNode="0>"/>
+	
+	
+	
+	<foldable>
+		<foldingConfigurations>
+			<foldingConfiguration>
+				<foldingParts startMoveDirection="0" posDirectionText="unfold_OBJECT" negDirectionText="fold_OBJECT">
+					<foldingPart animationName="fold1Source" speedScale="1"/>
+				</foldingParts>
+			</foldingConfiguration>
+		</foldingConfigurations>
+	</foldable>
+
+    <animations>
+        <animation name="moveSupport">
+            <part node="0>7" startTime="0" endTime="1" startTrans="0 0.428 4.792" endTrans="0 0 4.792"/>
+        </animation>
+        <animation name="fold1Source">
+            <part node="0>21" startTime="0" duration="1" startRot="0 0 0" endRot="0 -180 0"/>
+            <part node="0>22" startTime="1" duration="1" startRot="0 0 0" endRot="0 180 0"/>
+            <part node="0>15" startTime="2" duration="1" startTrans="0.548 0.926 -3.345" endTrans="0.548 0.926 -7.943"/>
+            <part node="0>15" startTime="3" duration="1" startRot="0 0 0" endRot="-12.5 0 0"/>
+        </animation>
+    </animations>
+	
+	  <tensionBelts>
+        <tensionBeltsConfigurations>
+            <tensionBeltsConfiguration>
+                <tensionBelts linkNode="0>5" jointNode="0>" width="0.075" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+					<tensionBelt startNode="0>5|0" endNode="0>5|0|0" offsetLeft="1.3"/>
+					<tensionBelt startNode="0>5|1" endNode="0>5|1|0"/>
+					<tensionBelt startNode="0>5|2" endNode="0>5|2|0"/>
+					<tensionBelt startNode="0>5|3" endNode="0>5|3|0"/>
+					<tensionBelt startNode="0>5|4" endNode="0>5|4|0"/>
+					<tensionBelt startNode="0>5|5" endNode="0>5|5|0"/>
+					<tensionBelt startNode="0>5|6" endNode="0>5|6|0"/>
+					<tensionBelt startNode="0>5|7" endNode="0>5|7|0"/>
+					<tensionBelt startNode="0>5|8" endNode="0>5|8|0"/>
+					<tensionBelt startNode="0>5|9" endNode="0>5|9|0" offsetRight="1.2"/>
+                </tensionBelts>
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+	<foldable>
+        <foldingParts posDirectionText="ramp_open" negDirectionText="ramp_close" startMoveDirection="0">
+            <foldingPart animationName="fold1Source" speedScale="1" componentJointIndex="1" anchorActor="0"/>
+        </foldingParts>
+    </foldable>
+    <foliageBending>
+        <bendingNode minX="-1.15" maxX="1.15" minZ="-2.8" maxZ="2.8" yOffset="0.05" />
+    </foliageBending>
+	
+	<washable dirtDuration="70" washDuration="1" workMultiplier="4"/>
+	
+	<i3dMappings>
+        <i3dMapping id="beltActivationTrigger" node="0>5|10" />	
+        <i3dMapping id="red1" node="0>1|0" />	
+        <i3dMapping id="red2" node="0>1|3" />	
+        <i3dMapping id="red3" node="0>1|4" />	
+        <i3dMapping id="red4" node="0>1|5" />	
+        <i3dMapping id="red5" node="0>1|6" />	
+        <i3dMapping id="red6" node="0>1|7" />	
+        <i3dMapping id="red7" node="0>1|8" />	
+        <i3dMapping id="red8" node="0>1|9" />	
+        <i3dMapping id="red9" node="0>1|10" />	
+        <i3dMapping id="red10" node="0>1|11" />	
+        <i3dMapping id="red11" node="0>1|12" />	
+        <i3dMapping id="red12" node="0>1|13" />
+        <i3dMapping id="red13" node="0>1|14" />
+        <i3dMapping id="red14" node="0>1|16" />	
+        <i3dMapping id="red15" node="0>1|17" />		
+        <i3dMapping id="red16" node="0>1|21" />
+        <i3dMapping id="red17" node="0>1|22" />
+        <i3dMapping id="red18" node="0>1|23" />	
+        <i3dMapping id="red19" node="0>1|24" />	
+        <i3dMapping id="red20" node="0>1|25" />
+        <i3dMapping id="red21" node="0>1|26" />
+        <i3dMapping id="red22" node="0>1|27" />	
+        <i3dMapping id="red23" node="0>1|28" />	
+        <i3dMapping id="red24" node="0>1|29" />
+        <i3dMapping id="red25" node="0>1|30" />
+        <i3dMapping id="red26" node="0>1|31" />	
+        <i3dMapping id="red27" node="0>1|32" />	
+        <i3dMapping id="red28" node="0>1|33" />
+        <i3dMapping id="red29" node="0>1|34" />
+        <i3dMapping id="red30" node="0>1|35" />	
+        <i3dMapping id="red31" node="0>1|36" />	
+        <i3dMapping id="red32" node="0>1|37" />
+        <i3dMapping id="red33" node="0>1|38" />
+        <i3dMapping id="red34" node="0>1|39" />	
+        <i3dMapping id="red35" node="0>1|40" />	
+        <i3dMapping id="red36" node="0>1|41" />
+        <i3dMapping id="red37" node="0>1|42" />	
+        <i3dMapping id="red38" node="0>1|43" />	
+        <i3dMapping id="red39" node="0>1|44" />
+        <i3dMapping id="red40" node="0>1|49" />
+        <i3dMapping id="red41" node="0>1|50" />	
+        <i3dMapping id="red42" node="0>1|51" />		
+        <i3dMapping id="red43" node="0>1|52" />
+        <i3dMapping id="red44" node="0>1|53" />
+        <i3dMapping id="red45" node="0>1|54" />	
+		<i3dMapping id="red46" node="0>1|55" />	
+        <i3dMapping id="red47" node="0>1|56" />	
+        <i3dMapping id="red48" node="0>1|57" />	
+        <i3dMapping id="red49" node="0>1|58" />	
+        <i3dMapping id="red80" node="0>1|59" />	
+        <i3dMapping id="red81" node="0>1|60" />	
+        <i3dMapping id="red82" node="0>1|61" />	
+        <i3dMapping id="red83" node="0>1|62" />	
+        <i3dMapping id="red84" node="0>1|63" />	
+        <i3dMapping id="red85" node="0>1|64" />	
+        <i3dMapping id="red86" node="0>1|65" />	
+        <i3dMapping id="red87" node="0>1|66" />
+        <i3dMapping id="red88" node="0>1|67" />
+        <i3dMapping id="red89" node="0>1|68" />	
+        <i3dMapping id="red90" node="0>1|69" />		
+        <i3dMapping id="red91" node="0>1|70" />
+        <i3dMapping id="red92" node="0>1|71" />
+        <i3dMapping id="red93" node="0>1|72" />	
+        <i3dMapping id="red94" node="0>1|73" />	
+        <i3dMapping id="red95" node="0>1|74" />
+        <i3dMapping id="red96" node="0>1|75" />
+        <i3dMapping id="red97" node="0>1|76" />	
+        <i3dMapping id="red98" node="0>1|77" />	
+		<i3dMapping id="red99" node="0>1|78" />	
+        <i3dMapping id="turnLightright" node="0>1|1" />	
+        <i3dMapping id="turnLightleft" node="0>1|2" />	
+        <i3dMapping id="turnLightright1" node="0>1|15" />	
+        <i3dMapping id="turnLightright2" node="0>1|19" />	
+        <i3dMapping id="turnLightright3" node="0>1|20" />	
+        <i3dMapping id="turnLightright4" node="0>1|18" />
+        <i3dMapping id="turnLightleft1" node="0>1|45" />	
+        <i3dMapping id="turnLightleft2" node="0>1|46" />	
+        <i3dMapping id="turnLightleft3" node="0>1|47" />	
+        <i3dMapping id="turnLightleft4" node="0>1|48" />		
+		<i3dMapping id="Side_Marker1" node="0>1|81|1" />	
+		<i3dMapping id="Side_Marker2" node="0>1|82|1" />	
+		<i3dMapping id="Side_Marker3" node="0>1|83|1" />	
+		<i3dMapping id="Side_Marker4" node="0>1|84|1" />			
+		<i3dMapping id="Side_Marker5" node="0>1|87|1" />	
+		<i3dMapping id="Side_Marker6" node="0>1|88|1" />			
+		<i3dMapping id="Side_Marker7" node="0>1|89|1" />	
+		<i3dMapping id="Side_Marker8" node="0>1|90|1" />	
+		<i3dMapping id="Side_Marker9" node="0>1|91|1" />	
+		<i3dMapping id="Side_Marker10" node="0>1|92|1" />	
+		<i3dMapping id="Side_Marker11" node="0>1|93|1" />	
+		<i3dMapping id="Side_Marker12" node="0>1|94|1" />			
+		<i3dMapping id="Side_Marker13" node="0>1|95|1" />	
+		<i3dMapping id="Side_Marker14" node="0>1|96|1" />			
+		<i3dMapping id="Side_Marker15" node="0>1|97|1" />	
+		<i3dMapping id="Side_Marker16" node="0>1|98|1" />	
+		<i3dMapping id="Side_Marker17" node="0>1|106|1" />	
+		<i3dMapping id="Side_Marker18" node="0>1|107|1" />	
+		<i3dMapping id="Side_Marker19" node="0>1|108|1" />	
+		<i3dMapping id="Side_Marker20" node="0>1|109|1" />			
+		<i3dMapping id="Side_Marker21" node="0>1|112|1" />	
+		<i3dMapping id="Side_Marker22" node="0>1|113|1" />			
+		<i3dMapping id="Side_Marker23" node="0>1|114|1" />	
+		<i3dMapping id="Side_Marker24" node="0>1|115|1" />	
+		<i3dMapping id="Side_Marker25" node="0>1|116|1" />	
+		<i3dMapping id="Side_Marker26" node="0>1|117|1" />	
+		<i3dMapping id="Side_Marker27" node="0>1|118|1" />	
+		<i3dMapping id="Side_Marker28" node="0>1|119|1" />			
+		<i3dMapping id="Side_Marker29" node="0>1|120|1" />	
+		<i3dMapping id="Side_Marker30" node="0>1|121|1" />			
+		<i3dMapping id="Side_Marker31" node="0>1|122|1" />	
+		<i3dMapping id="Side_Marker33" node="0>1|123|1" />	
+		<i3dMapping id="Side_Markertop1" node="0>1|85|1" />	
+		<i3dMapping id="Side_Markertop2" node="0>1|86|1" />	
+		<i3dMapping id="Side_Markertop3" node="0>1|99|1" />	
+		<i3dMapping id="Side_Markertop4" node="0>1|100|1" />	
+		<i3dMapping id="Side_Markertop5" node="0>1|110|1" />	
+		<i3dMapping id="Side_Markertop6" node="0>1|111|1" />	
+		<i3dMapping id="Side_Markertop7" node="0>1|124|1" />	
+		<i3dMapping id="Side_Markertop8" node="0>1|125|1" />	
+		<i3dMapping id="red100" node="0>1|79" />	
+		<i3dMapping id="red101" node="0>1|80" />	
+		<i3dMapping id="reverse_static" node="0>1|105"/>
+
+    </i3dMappings>	
+</vehicle>

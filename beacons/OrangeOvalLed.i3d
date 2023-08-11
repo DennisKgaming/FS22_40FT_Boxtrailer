@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pickup2014" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="$data/shared/assets/lights/lizard/rearLightOvalLED_01_normal.png"/>
+    <File fileId="3" filename="$data/shared/assets/lights/lizard/rearLightOvalLED_01_specular.png"/>
+    <File fileId="14" filename="$data/shared/clearPlastic_diffuse.png"/>
+    <File fileId="8" filename="../new_shaders/default_normal.dds"/>
+    <File fileId="9" filename="../new_shaders/default_specular.dds"/>
+    <File fileId="10" filename="../new_shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="rearLightOvalLED_01_mat" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="static_paint" materialId="5" alphaBlending="true" customShaderId="10" customShaderVariation="staticLight">
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 5.75 0"/>
+    </Material>
+    <Material name="clearPlastic_mat" materialId="4" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+      <Texture fileId="14"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="OrangeOvalLed.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="0.828038 0.469 4.378" rotation="0 0 180" scale="0.8 0.8 0.8" clipDistance="300" nodeId="11" materialIds="6" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="2" name="innerPartStatic.001" translation="-0.807081 -3.34703 -0.938427" rotation="170 -0 -2.84978e-12" scale="0.01 0.01 0.01" nodeId="12" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+      <Shape shapeId="3" name="lightStatic" translation="5.34058e-07 0.0121091 0" rotation="-1.37613 -0 0" clipDistance="35" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+    </Shape>
+  </Scene>
+
+</i3D>

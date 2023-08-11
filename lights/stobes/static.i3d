@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="MackSuperlinerS" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="2" filename="new_shaders/default_specular.dds"/>
+        <File fileId="3" filename="new_shaders/vehicleShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="reverse_static" materialId="27" diffuseColor="0.8 0.8 0.8 1" customShaderId="3" customShaderVariation="staticLight">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="1 1 1 17"/>
+            <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+            <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+            <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+            <CustomParameter name="lightControl" value="0 0 0 0"/>
+            <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="static.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="reverse_static" translation="0 0.182806 -1.88769" scale="0.7 0.7 0.7" nodeId="286" materialIds="27"/>
+    </Scene>
+</i3D>
