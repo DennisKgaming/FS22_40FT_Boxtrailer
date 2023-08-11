@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="BigTex_Trailer.blend" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="2" filename="new_shaders/default_normal.dds"/>
+        <File fileId="10" filename="new_shaders/default_specular.dds"/>
+        <File fileId="3" filename="new_shaders/gen_wear_dirt_2.dds"/>
+        <File fileId="4" filename="new_shaders/vehicleShader.xml"/>
+        <File fileId="8" filename="textures/windowfrontdiffuse.dds"/>
+    </Files>
+    <Materials>
+        <Material name="White_Glass" materialId="11" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+            <Texture fileId="8"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+            <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+            <CustomParameter name="colorMat2" value="0.8 0.2 0 21"/>
+            <CustomParameter name="colorMat3" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+            <CustomParameter name="lightControl" value="0 0 0 0"/>
+            <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+        </Material>
+        <Material name="UDIM_Generic" materialId="36" diffuseColor="0 0.8 0.0156863 1" customShaderId="4" customShaderVariation="colorMask">
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+            <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+            <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+            <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="0.027 0.027 0.027 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+        </Material>
+        <Material name="Reflect_White" materialId="27" diffuseColor="0.737255 0.729412 0.658824 1" customShaderId="4" customShaderVariation="staticLight">
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="10"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+            <CustomParameter name="colorMat1" value="0.8 0.55 0 3"/>
+            <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+            <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+            <CustomParameter name="lightControl" value="0 0 0 0"/>
+            <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="side.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="Side_Marker" translation="1.15554 0.561522 1.96534" scale="0.126482 0.126482 0.126482" nodeId="297">
+            <Shape shapeId="1" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="298" materialIds="36"/>
+            <Shape shapeId="2" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="299" materialIds="11"/>
+            <Shape shapeId="3" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="300" materialIds="27"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

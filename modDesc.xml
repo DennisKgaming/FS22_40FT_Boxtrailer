@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="40">
+    <author>Winston9897, Brandon3art, Reskined By TFSGROUP</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>CJ Trailer TFSGROUP 1</en>
+        <de>CJ Trailer TFSGROUP 1</de>
+    </title>
+    <description>
+        <en>CJ Trailer TFSGROUP 1</en>
+        <de>CJ Trailer TFSGROUP 1</de>
+    </description>
+    <iconFilename>store_PJ40ft.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <storeItems>
+        <storeItem xmlFilename="PJ_40ft.xml"/>
+    </storeItems>
+    <brands>
+        <brand name="1320video" title="Race trailer" image="race1.dds"/>
+    </brands>
+	<inputBinding>
+		<input name='fold1Source' key1='KEY_x' button=''/>
+
+	</inputBinding>
+	<l10n>
+        <text name="ramp_open">
+            <en>Open Door and Add Ramps</en>
+            <de>In Rampen</de>
+            <es>Poner rampas</es>
+        </text>
+        <text name="ramp_close">
+            <en>Close Door and Remove Ramps</en>
+            <es>Quitar rampas</es>
+        </text>
+    </l10n>
+   
+</modDesc>

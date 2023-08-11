@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="MackSuperlinerS" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="vehicleShader.xml"/>
+        <File fileId="2" filename="rearLightOvalLED_01_normal.png"/>
+        <File fileId="3" filename="rearLightOvalLED_01_specular.png"/>
+        <File fileId="8" filename="clearPlastic_diffuse.png"/>
+    </Files>
+    <Materials>
+        <Material name="rearLightOvalLED_01_mat" materialId="42" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="1 1 1 2"/>
+            <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+            <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+            <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+        </Material>
+        <Material name="clearPlastic_mat" materialId="55" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+            <Texture fileId="8"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="1 1 1 2"/>
+            <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+            <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+            <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+            <CustomParameter name="lightControl" value="0 0 0 0"/>
+            <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+        </Material>
+        <Material name="rearLightOvalLED_01_mat1" materialId="90" diffuseColor="0.494118 0.494118 0.494118 1" alphaBlending="true" customShaderId="4" customShaderVariation="staticLight">
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="1 1 1 2"/>
+            <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+            <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+            <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+            <CustomParameter name="lightControl" value="0 0 0 0"/>
+            <CustomParameter name="blinkOffset" value="0 0 8.25 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="stobe.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="reverseLights" nodeId="327">
+            <Light name="reverseLight" translation="0 0.820773 -3.86965" rotation="-15 0 0" clipDistance="75" nodeId="328" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5" coneAngle="150" dropOff="3"/>
+        </TransformGroup>
+        <TransformGroup name="Becon Lights" nodeId="329">
+            <TransformGroup name="diffuse" nodeId="330"/>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="1.26796 1.42284 -2.653" rotation="90 90 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="331" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="332" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="333" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateL" nodeId="334"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="1.26006 1.423 -1.26818" rotation="90 90 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="335" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="336" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="337" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="338"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="0.989599 1.22074 2.12834" rotation="90 90 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="339" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="340" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="341" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="342"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="0.377564 0.822795 4.00532" rotation="-90 0 1.37459e-05" scale="0.4 0.4 0.4" clipDistance="300" nodeId="343" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="344" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="345" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="346"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="-0.37981 0.822795 4.00532" rotation="-90 0 1.37459e-05" scale="0.4 0.4 0.4" clipDistance="300" nodeId="347" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="348" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="349" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="350"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="-0.99053 1.221 2.16693" rotation="-90 -90 1.63968e-05" scale="0.4 0.4 0.4" clipDistance="300" nodeId="351" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="352" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="353" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="354"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="-1.26675 1.423 -2.653" rotation="-90 -90 2.13336e-05" scale="0.4 0.4 0.4" clipDistance="300" nodeId="355" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="356" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="357" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateL" nodeId="358"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="-1.26618 1.423 -1.26818" rotation="-90 -90 0" scale="0.4 0.4 0.4" clipDistance="300" nodeId="359" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="360" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="361" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="362"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="-0.958149 2.40487 -3.781" rotation="90 0 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="363" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="364" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="365" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="366"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="1.00442 2.40487 -3.78317" rotation="90 0 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="367" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="368" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="369" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="370"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="1.00442 0.913 -4.493" rotation="90 0 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="371" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="372" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="373" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="374"/>
+            </Shape>
+            <Shape shapeId="1" name="rearLightOvalLEDOrange_01" translation="-0.958149 0.913 -4.49325" rotation="90 0 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="375" materialIds="42" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="innerPartStatic" visibility="false" clipDistance="35" nodeId="376" materialIds="90" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="3" name="orange1" translation="5.34058e-07 0.013742 0" visibility="false" clipDistance="35" nodeId="377" materialIds="55" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <TransformGroup name="TailgateR" nodeId="378"/>
+            </Shape>
+        </TransformGroup>
+    </Scene>
+</i3D>

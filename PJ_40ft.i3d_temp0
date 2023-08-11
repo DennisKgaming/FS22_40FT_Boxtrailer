@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pjlowprogneckfinal.blend" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="54" filename="Squad_Racing_Trailer_converted/Parts/Textures/Bois.png"/>
+    <File fileId="53" filename="Squad_Racing_Trailer_converted/Parts/Textures/Gris4.png"/>
+    <File fileId="46" filename="Squad_Racing_Trailer_converted/Textures/allied.dds"/>
+    <File fileId="47" filename="Squad_Racing_Trailer_converted/Textures/atlas.dds"/>
+    <File fileId="44" filename="Squad_Racing_Trailer_converted/Textures/black.dds"/>
+    <File fileId="52" filename="Squad_Racing_Trailer_converted/Textures/lights.dds"/>
+    <File fileId="42" filename="Squad_Racing_Trailer_converted/Textures/rampa.dds"/>
+    <File fileId="43" filename="Squad_Racing_Trailer_converted/Textures/unitedold.dds"/>
+    <File fileId="45" filename="Squad_Racing_Trailer_converted/Textures/white.dds"/>
+    <File fileId="48" filename="Squad_Racing_Trailer_converted/lightTemplates/coronaOrange_diffuse.dds"/>
+    <File fileId="50" filename="Squad_Racing_Trailer_converted/lightTemplates/coronaRed_diffuse.dds"/>
+    <File fileId="51" filename="Squad_Racing_Trailer_converted/lightTemplates/coronaWhite_diffuse.dds"/>
+    <File fileId="30" filename="lights/stobes/clearPlastic_diffuse.png"/>
+    <File fileId="33" filename="lights/stobes/new_shaders/default_specular.dds"/>
+    <File fileId="34" filename="lights/stobes/new_shaders/vehicleShader.xml"/>
+    <File fileId="31" filename="lights/stobes/rearLightOvalLEDRed_02_normal.png"/>
+    <File fileId="32" filename="lights/stobes/rearLightOvalLEDRed_02_specular.png"/>
+    <File fileId="24" filename="lights/stobes/rearLightOvalLED_01_normal.png"/>
+    <File fileId="25" filename="lights/stobes/rearLightOvalLED_01_specular.png"/>
+    <File fileId="26" filename="lights/stobes/vehicleShader.xml"/>
+    <File fileId="14" filename="sidemarker/new_shaders/default_normal.dds"/>
+    <File fileId="22" filename="sidemarker/new_shaders/default_specular.dds"/>
+    <File fileId="15" filename="sidemarker/new_shaders/gen_wear_dirt_2.dds"/>
+    <File fileId="16" filename="sidemarker/new_shaders/vehicleShader.xml"/>
+    <File fileId="20" filename="sidemarker/textures/windowfrontdiffuse.dds"/>
+    <File fileId="3" filename="textures\tire.dds"/>
+    <File fileId="49" filename="$data/shaders/emissiveLightsShader.xml"/>
+    <File fileId="7" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="11" filename="$data/shared/assets/lights/lizard/rearLightCircleRed_02_normal.png"/>
+    <File fileId="12" filename="$data/shared/assets/lights/lizard/rearLightCircleRed_02_specular.png"/>
+    <File fileId="5" filename="$data/shared/assets/lights/lizard/rearLightOval_01_normal.png"/>
+    <File fileId="6" filename="$data/shared/assets/lights/lizard/rearLightOval_01_specular.png"/>
+    <File fileId="4" filename="$data/shared/clearPlastic_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="col" materialId="5" diffuseColor="0.8 0.8 0.8 1">
+    </Material>
+    <Material name="clearPlastic_mat" materialId="23" alphaBlending="true" customShaderId="26" customShaderVariation="staticLight">
+      <Texture fileId="30"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="rearLightOvalLED_01_mat" materialId="24" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="26" customShaderVariation="colorMask">
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="acmat_0" materialId="22" diffuseColor="1 0 0 1" specularColor="0.2 1 0.2">
+    </Material>
+    <Material name="chrom" materialId="4">
+      <Texture fileId="53"/>
+    </Material>
+    <Material name="Material.061" materialId="6" diffuseColor="1 1 1 1" specularColor="0.247059 1 0.247059">
+    </Material>
+    <Material name="pasted__clearPlastic_mat" materialId="13" alphaBlending="true" customShaderId="7" customShaderVariation="staticLight">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="rearLightOvalLED_01_mat1" materialId="15" diffuseColor="0.494118 0.494118 0.494118 1" alphaBlending="true" customShaderId="26" customShaderVariation="staticLight">
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 8.25 0"/>
+    </Material>
+    <Material name="car_corona_red_mat" materialId="19" alphaBlending="true" customShaderId="49">
+      <Emissivemap fileId="50"/>
+      <CustomParameter name="blinkOffset" value="0 0 0 0"/>
+    </Material>
+    <Material name="Material.003" materialId="20">
+      <Texture fileId="52"/>
+    </Material>
+    <Material name="allied" materialId="21">
+      <Texture fileId="46"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="7" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="reverse_static" materialId="14" diffuseColor="0.8 0.8 0.8 1" customShaderId="34" customShaderVariation="staticLight">
+      <Glossmap fileId="33"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 17"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="Default" materialId="9" diffuseColor="0.694118 0.694118 0.694118 1" specularColor="0.701961 1 0.701961">
+    </Material>
+    <Material name="unitedold" materialId="8">
+      <Texture fileId="43"/>
+    </Material>
+    <Material name="lambert1" materialId="11" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="White_Glass" materialId="16" alphaBlending="true" customShaderId="16" customShaderVariation="staticLight">
+      <Texture fileId="20"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.8 0.2 0 21"/>
+      <CustomParameter name="colorMat3" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="chrometrailerhinge" materialId="17">
+      <Texture fileId="44"/>
+    </Material>
+    <Material name="coronaMat_front" materialId="18" alphaBlending="true" customShaderId="49">
+      <Emissivemap fileId="51"/>
+      <CustomParameter name="blinkOffset" value="0 0 0 0"/>
+    </Material>
+    <Material name="tire" materialId="10">
+      <Texture fileId="3"/>
+    </Material>
+    <Material name="12 - Default" materialId="12" diffuseColor="0.584314 0.584314 0.584314 1">
+    </Material>
+    <Material name="rearLightOvalLEDRed_02_mat" materialId="25" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="26" customShaderVariation="colorMask">
+      <Normalmap fileId="31"/>
+      <Glossmap fileId="32"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="corona_orange_mat" materialId="32" alphaBlending="true" customShaderId="49">
+      <Emissivemap fileId="48"/>
+      <CustomParameter name="blinkOffset" value="0 0 0 0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="28">
+      <Texture fileId="45"/>
+    </Material>
+    <Material name="dunlop.001" materialId="27">
+      <Texture fileId="47"/>
+    </Material>
+    <Material name="acmat_0" materialId="34" specularColor="1 1 1">
+      <Texture fileId="42"/>
+    </Material>
+    <Material name="wheel_tr" materialId="31" diffuseColor="1 1 1 1" specularColor="1 1 1">
+    </Material>
+    <Material name="clearPlastic_mat:clearPlastic_mat" materialId="29" alphaBlending="true" customShaderId="7" customShaderVariation="staticLight">
+      <Texture fileId="4"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="1 0.25 0 2"/>
+      <CustomParameter name="colorMat2" value="0.5 0 0 2"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="Reflect_White" materialId="26" diffuseColor="0.737255 0.729412 0.658824 1" customShaderId="16" customShaderVariation="staticLight">
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="22"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="0.8 0.55 0 3"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="lightControl" value="0 0 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0 1 0"/>
+    </Material>
+    <Material name="UDIM_Generic" materialId="30" diffuseColor="0 0.8 0.0156863 1" customShaderId="16" customShaderVariation="colorMask">
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="0.027 0.027 0.027 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="Material.001" materialId="33">
+      <Texture fileId="54"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="PJ_40ft.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="PJ_40ft" dynamic="true" compound="true" collisionMask="768" staticFriction="1" dynamicFriction="1" density="0.2" clipDistance="300" nodeId="84" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <TransformGroup name="wheels" translation="0 -0.0954892 -0.939324" nodeId="85">
+        <TransformGroup name="leftWeel" translation="1.062 0.401565 -2.825" scale="1 1.12 1.12" nodeId="86">
+          <TransformGroup name="leftWeel" nodeId="87">
+            <Shape shapeId="2" name="leftFrontWheel" nodeId="88" materialIds="31" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="tire" nodeId="89" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="rightWeel" translation="-1.062 0.402 -2.825" scale="1 1.12 1.12" nodeId="90">
+          <TransformGroup name="rightWeel" nodeId="91">
+            <Shape shapeId="2" name="leftFrontWheel" rotation="0 0 180" nodeId="92" materialIds="31" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="tire" rotation="0 0 180" nodeId="93" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="leftWeel" translation="1.062 0.42 -4.033" scale="1 1.12 1.12" nodeId="94">
+          <TransformGroup name="leftWeel" nodeId="95">
+            <Shape shapeId="2" name="leftFrontWheel" nodeId="96" materialIds="31" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="tire" nodeId="97" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="rightWeel" translation="-1.062 0.42 -4.033" scale="1 1.12 1.12" nodeId="98">
+          <TransformGroup name="rightWeel" nodeId="99">
+            <Shape shapeId="2" name="leftFrontWheel" rotation="0 0 180" nodeId="100" materialIds="31" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="tire" rotation="0 0 180" nodeId="101" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="transform" nodeId="102">
+        <Shape shapeId="4" name="red1" translation="-1.26532 4.0084 -7.94997" rotation="-90 0 0" scale="0.5 0.88 0.5" clipDistance="35" nodeId="103" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightright" translation="-1.04 0.752 -7.964" rotation="-90 0 0" scale="1.8 2 1.8" clipDistance="35" nodeId="104" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightleft" translation="1.04 0.753 -7.964" rotation="-90 0 0" scale="1.8 0.809 1.8" clipDistance="35" nodeId="105" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red2" translation="-1.291 3.134 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="106" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red3" translation="-1.291 3.522 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="107" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red4" translation="-1.291 3.328 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="108" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red5" translation="-1.291 3.288 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="109" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red6" translation="-1.291 3.251 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="110" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red7" translation="-1.291 3.213 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="111" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red8" translation="-1.291 3.175 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="112" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red9" translation="-1.291 3.406 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="113" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red10" translation="-1.291 3.44312 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="114" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red11" translation="-1.291 3.483 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="115" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red12" translation="-1.291 2.33843 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="116" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red13" translation="-1.291 2.38035 -7.949" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="117" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightright1" translation="-1.291 2.45639 -7.969" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="118" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red14" translation="-1.29113 2.41908 -7.949" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="119" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red15" translation="-1.291 3.36609 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="120" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightright4" translation="-1.291 2.49445 -7.969" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="121" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightright2" translation="-1.291 2.53436 -7.969" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="122" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightright3" translation="-1.291 2.57103 -7.969" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="123" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red16" translation="-1.291 2.30358 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="124" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red17" translation="-1.291 2.26468 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="125" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red18" translation="-1.291 2.18916 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="126" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red19" translation="-1.291 2.22607 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="127" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red20" translation="-1.291 1.71359 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="128" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red21" translation="-1.291 1.67608 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="129" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red22" translation="-1.291 1.63318 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="130" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red23" translation="-1.291 1.60044 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="131" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red24" translation="-1.291 1.55878 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="132" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red25" translation="-1.291 1.51953 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="133" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red26" translation="-1.291 1.48128 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="134" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red27" translation="-1.291 1.44312 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="135" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red28" translation="-1.291 1.44146 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="136" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red29" translation="-1.291 1.40822 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="137" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red30" translation="-1.291 1.36795 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="138" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red31" translation="-1.291 1.33255 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="139" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red32" translation="-0.880791 0.752 -7.949" rotation="-90 0 0" scale="1.8 0.808826 1.8" clipDistance="35" nodeId="140" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red33" translation="-0.718472 0.752 -7.949" rotation="-90 0 0" scale="1.8 0.808826 1.8" clipDistance="35" nodeId="141" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red34" translation="0.876212 0.752 -7.949" rotation="-90 0 0" scale="1.8 0.808826 1.8" clipDistance="35" nodeId="142" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red35" translation="0.716212 0.752 -7.949" rotation="-90 0 0" scale="1.8 0.808826 1.8" clipDistance="35" nodeId="143" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="red36" translation="-0.213613 4.0084 -7.94997" rotation="-90 0 0" scale="0.5 0.88 0.5" clipDistance="35" nodeId="144" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="red37" translation="1.273 4.0084 -7.94997" rotation="-90 0 0" scale="0.5 0.88 0.5" clipDistance="35" nodeId="145" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="red38" translation="0.208533 4.0084 -7.94997" rotation="-90 0 0" scale="0.5 0.88 0.5" clipDistance="35" nodeId="146" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="red39" translation="0.00400801 4.0084 -7.94997" rotation="-90 0 0" scale="0.5 0.88 0.5" clipDistance="35" nodeId="147" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightleft1" translation="1.291 2.45744 -7.969" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="148" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightright2" translation="1.291 2.53436 -7.969" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="149" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightright3" translation="1.291 2.57103 -7.969" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="150" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="5" name="turnLightright4" translation="1.291 2.49445 -7.969" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="151" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red40" translation="1.291 3.134 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="152" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red41" translation="1.291 3.522 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="153" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red42" translation="1.291 3.328 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="154" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red43" translation="1.291 3.288 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="155" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red44" translation="1.291 3.251 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="156" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red45" translation="1.291 3.213 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="157" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red46" translation="1.291 3.175 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="158" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red47" translation="1.291 3.406 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="159" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red48" translation="1.291 3.44312 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="160" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red49" translation="1.291 3.483 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="161" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red80" translation="1.291 2.33843 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="162" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red81" translation="1.291 2.38035 -7.949" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="163" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red82" translation="1.291 2.41908 -7.949" rotation="-90 0 0" scale="0.4 0.809 0.4" clipDistance="35" nodeId="164" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red83" translation="1.291 3.36609 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="165" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red84" translation="1.291 2.30358 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="166" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red85" translation="1.291 2.26468 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="167" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red86" translation="1.291 2.18916 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="168" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red87" translation="1.291 2.22607 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="169" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red88" translation="1.291 1.71359 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="170" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red89" translation="1.291 1.67608 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="171" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red90" translation="1.291 1.63318 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="172" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red91" translation="1.291 1.60044 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="173" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red92" translation="1.291 1.55878 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="174" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red93" translation="1.291 1.51953 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="175" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red94" translation="1.291 1.48128 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="176" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red95" translation="1.291 1.44312 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="177" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red96" translation="1.291 1.44146 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="178" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red97" translation="1.291 1.40822 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="179" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red98" translation="1.291 1.36795 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="180" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="6" name="red99" translation="1.291 1.33039 -7.949" rotation="-90 0 0" scale="0.4 0.808826 0.4" clipDistance="35" nodeId="181" materialIds="29" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="red100" translation="-1.10969 4.01013 8.03261" rotation="-90 180 0" scale="0.6 1.5 0.6" clipDistance="35" nodeId="182" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="4" name="red101" translation="1.11 4.01013 8.03261" rotation="-90 180 0" scale="0.6 1.5 0.6" clipDistance="35" nodeId="183" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        <TransformGroup name="Side_Marker1" translation="1.322 1.18837 7.76538" scale="0.2 0.2 0.2" nodeId="184">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="185" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="186" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="187" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker2" translation="1.32184 1.18837 7.15455" scale="0.2 0.2 0.2" nodeId="188">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="189" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="190" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="191" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker3" translation="1.32184 1.18837 6.47026" scale="0.2 0.2 0.2" nodeId="192">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="193" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="194" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="195" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker4" translation="1.322 1.18837 5.69689" scale="0.2 0.2 0.2" nodeId="196">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="197" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="198" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="199" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Markertop1" translation="1.26779 4.012 7.7577" scale="0.2 0.2 0.2" nodeId="200">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="201" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="202" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="203" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Markertop2" translation="1.268 4.012 5.69689" scale="0.2 0.2 0.2" nodeId="204">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="205" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="206" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="207" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker5" translation="1.322 0.342257 4.20482" scale="0.2 0.2 0.2" nodeId="208">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="209" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="210" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="211" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker6" translation="1.322 0.342257 3.18313" scale="0.2 0.2 0.2" nodeId="212">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="213" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="214" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="215" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker7" translation="1.322 0.342257 2.19146" scale="0.2 0.2 0.2" nodeId="216">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="217" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="218" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="219" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker8" translation="1.322 0.342257 1.20386" scale="0.2 0.2 0.2" nodeId="220">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="221" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="222" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="223" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker9" translation="1.322 0.342257 0.2046" scale="0.2 0.2 0.2" nodeId="224">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="225" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="226" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="227" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker10" translation="1.322 0.342257 -0.799803" scale="0.2 0.2 0.2" nodeId="228">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="229" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="230" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="231" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker11" translation="1.322 0.342257 -1.79757" scale="0.2 0.2 0.2" nodeId="232">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="233" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="234" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="235" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker12" translation="1.322 0.342257 -2.80616" scale="0.2 0.2 0.2" nodeId="236">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="237" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="238" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="239" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker13" translation="1.322 0.342257 -5.64805" scale="0.2 0.2 0.2" nodeId="240">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="241" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="242" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="243" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker14" translation="1.322 0.342257 -6.25217" scale="0.2 0.2 0.2" nodeId="244">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="245" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="246" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="247" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker15" translation="1.322 0.342257 -6.91983" scale="0.2 0.2 0.2" nodeId="248">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="249" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="250" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="251" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker16" translation="1.32912 0.622295 -7.84384" scale="0.2 0.2 0.2" nodeId="252">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="253" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="254" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="255" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Markertop3" translation="1.268 4.012 -0.00906768" scale="0.2 0.2 0.2" nodeId="256">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="257" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="258" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="259" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Markertop4" translation="1.268 4.012 -7.65887" scale="0.2 0.2 0.2" nodeId="260">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="261" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="262" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="263" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Becon Lights" translation="0 4.12444 0" nodeId="264">
+          <TransformGroup name="diffuse" translation="0 0 -0.925247" nodeId="265"/>
+          <Shape shapeId="10" name="rearLightOvalLEDOrange_01" translation="1.286 -1.422 -7.944" rotation="-90 0 -90" scale="0.7 0.4 0.5" clipDistance="300" nodeId="266" materialIds="24" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="innerPartStatic" clipDistance="35" nodeId="267" materialIds="15" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="12" name="orange1" translation="5.34058e-07 0.013742 0" clipDistance="35" nodeId="268" materialIds="23" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="TailgateL" nodeId="269"/>
+          </Shape>
+          <Shape shapeId="10" name="rearLightOvalLEDOrange_02" translation="-1.28556 -1.41149 -7.9444" rotation="-90 0 -90" scale="0.7 0.4 0.5" clipDistance="300" nodeId="270" materialIds="24" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="innerPartStatic" clipDistance="35" nodeId="271" materialIds="15" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="12" name="orange1" translation="5.34058e-07 0.013742 0" clipDistance="35" nodeId="272" materialIds="23" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="TailgateR" nodeId="273"/>
+          </Shape>
+          <Shape shapeId="10" name="rearLightOvalLEDOrange_03" translation="-0.881 -3.51 -7.952" rotation="-90 0 180" scale="0.6 1 0.6" clipDistance="300" nodeId="274" materialIds="24" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="innerPartStatic" clipDistance="35" nodeId="275" materialIds="15" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="12" name="orange1" translation="5.34058e-07 0.013742 0" clipDistance="35" nodeId="276" materialIds="23" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="TailgateR" nodeId="277"/>
+          </Shape>
+          <Shape shapeId="10" name="rearLightOvalLEDOrange_04" translation="0.881043 -3.50997 -7.95232" rotation="-90 0 180" scale="0.6 1 0.6" clipDistance="300" nodeId="278" materialIds="24" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="innerPartStatic" clipDistance="35" nodeId="279" materialIds="15" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="12" name="orange1" translation="5.34058e-07 0.013742 0" clipDistance="35" nodeId="280" materialIds="23" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="TailgateR" nodeId="281"/>
+          </Shape>
+          <Shape shapeId="10" name="rearLightOvalLEDOrange_05" translation="1.153 -0.118 -7.96" rotation="-90 0 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="282" materialIds="24" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="innerPartStatic" clipDistance="35" nodeId="283" materialIds="15" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="12" name="orange1" translation="5.34058e-07 0.013742 0" clipDistance="35" nodeId="284" materialIds="23" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="TailgateR" nodeId="285"/>
+          </Shape>
+          <Shape shapeId="10" name="rearLightOvalLEDOrange_01" translation="-1.15192 -0.117735 -7.96" rotation="-90 0 180" scale="0.4 0.4 0.4" clipDistance="300" nodeId="286" materialIds="24" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="11" name="innerPartStatic" clipDistance="35" nodeId="287" materialIds="15" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="12" name="orange1" translation="5.34058e-07 0.013742 0" clipDistance="35" nodeId="288" materialIds="23" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <TransformGroup name="TailgateR" nodeId="289"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="reverseLights" translation="0 0.762074 -7.99697" nodeId="290">
+          <Light name="reverseLight" translation="0 0.820773 -3.86965" rotation="-15 0 0" clipDistance="75" nodeId="291" type="spot" color="0.9 0.9 1" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5" coneAngle="150" dropOff="3"/>
+        </TransformGroup>
+        <Shape shapeId="13" name="rearLightCircleLEDRed_01" translation="-0.117145 0.617 -7.943" rotation="91 180 0" scale="0.6 0.6 0.6" clipDistance="300" nodeId="292" materialIds="25" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="13" name="rearLightCircleLEDRed_01" translation="0.117 0.617158 -7.943" rotation="91 180 0" scale="0.6 0.6 0.6" clipDistance="300" nodeId="293" materialIds="25" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="14" name="reverse_static" translation="2.35979e-05 0.0245108 -5.33" scale="0.7 0.7 0.7" nodeId="294" materialIds="14"/>
+        <TransformGroup name="Side_Marker17" translation="-1.322 1.18837 7.76538" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="295">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="296" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="297" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="298" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker18" translation="-1.322 1.18837 7.15455" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="299">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="300" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="301" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="302" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker19" translation="-1.322 1.18837 6.47026" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="303">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="304" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="305" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="306" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker20" translation="-1.322 1.18837 5.69689" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="307">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="308" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="309" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="310" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Markertop5" translation="-1.268 4.012 7.7577" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="311">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="312" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="313" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="314" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Markertop6" translation="-1.268 4.012 5.69689" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="315">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="316" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="317" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="318" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker21" translation="-1.322 0.342257 4.20482" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="319">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="320" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="321" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="322" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker22" translation="-1.322 0.342257 3.18313" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="323">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="324" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="325" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="326" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker23" translation="-1.322 0.342257 2.19146" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="327">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="328" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="329" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="330" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker24" translation="-1.322 0.342257 1.20386" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="331">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="332" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="333" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="334" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker25" translation="-1.322 0.342257 0.2046" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="335">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="336" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="337" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="338" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker26" translation="-1.322 0.342257 -0.799803" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="339">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="340" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="341" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="342" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker27" translation="-1.322 0.342257 -1.79757" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="343">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="344" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="345" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="346" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker28" translation="-1.322 0.342257 -2.80616" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="347">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="348" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="349" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="350" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker29" translation="-1.322 0.342257 -5.64805" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="351">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="352" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="353" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="354" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker30" translation="-1.322 0.342257 -6.25217" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="355">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="356" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="357" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="358" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker31" translation="-1.322 0.342257 -6.91983" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="359">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="360" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="361" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="362" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Marker33" translation="-1.329 0.622295 -7.84384" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="363">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="364" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="365" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="366" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Markertop7" translation="-1.268 4.012 -0.00906768" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="367">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="368" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="369" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="370" materialIds="26"/>
+        </TransformGroup>
+        <TransformGroup name="Side_Markertop8" translation="-1.268 4.012 -7.65887" rotation="0 180 0" scale="0.2 0.2 0.2" nodeId="371">
+          <Shape shapeId="7" name="Light_LED_Body_4" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="372" materialIds="30"/>
+          <Shape shapeId="8" name="Light_LED_Glass_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="373" materialIds="16"/>
+          <Shape shapeId="9" name="Light_LED_Reflect_2" translation="0 -0 -1e-06" rotation="90 90 0" scale="0.006223 0.006223 0.006223" nodeId="374" materialIds="26"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="fixArea" translation="0 0.791 0" clipDistance="200" nodeId="375">
+        <TransformGroup name="null4" translation="-1.27521 0.04 5.65861" nodeId="376"/>
+        <TransformGroup name="null5" translation="-1.27521 3 5.65861" nodeId="377"/>
+        <TransformGroup name="null6" translation="1.27521 0.04 -7.49114" nodeId="378"/>
+        <TransformGroup name="null7" translation="1.27521 3 -7.49114" nodeId="379"/>
+      </TransformGroup>
+      <Shape shapeId="15" name="dynamicMountTriggerShape" translation="0 1.488 0" kinematic="true" compound="true" trigger="true" collisionMask="83894272" density="0.01" clipDistance="200" nodeId="380" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="colJoints" clipDistance="200" nodeId="381">
+        <TransformGroup name="colJoint" translation="0.97519 0.749 -4.57624" nodeId="382"/>
+        <TransformGroup name="colJoint" translation="-0.97519 0.749 -4.57624" nodeId="383"/>
+      </TransformGroup>
+      <TransformGroup name="tensionBelts" translation="0.00956812 0.850029 -6.84127" nodeId="384">
+        <TransformGroup name="beltStart2" translation="1.37846 1.17035e-05 10.6332" rotation="0 -90 0" nodeId="385">
+          <TransformGroup name="beltEnd6" translation="0 -1.42109e-16 2.81012" nodeId="386"/>
+        </TransformGroup>
+        <TransformGroup name="beltStart3" translation="1.37183 1.17035e-05 9.64372" rotation="0 -90 0" nodeId="387">
+          <TransformGroup name="beltEnd6" translation="0 -1.42109e-16 2.78983" nodeId="388"/>
+        </TransformGroup>
+        <TransformGroup name="beltStart4" translation="1.37247 1.17035e-05 8.7631" rotation="0 -90 0" nodeId="389">
+          <TransformGroup name="beltEnd6" translation="0 -1.42109e-16 2.7788" nodeId="390"/>
+        </TransformGroup>
+        <TransformGroup name="beltStart5" translation="1.38367 1.17035e-05 7.73261" rotation="0 -90 0" nodeId="391">
+          <TransformGroup name="beltEnd6" translation="0 -1.42109e-16 2.78767" nodeId="392"/>
+        </TransformGroup>
+        <TransformGroup name="beltStart6" translation="1.37989 1.17035e-05 6.67515" rotation="0 -90 0" nodeId="393">
+          <TransformGroup name="beltEnd6" translation="0 -1.42109e-16 2.78579" nodeId="394"/>
+        </TransformGroup>
+        <TransformGroup name="beltStart7" translation="1.40475 1.17035e-05 5.63031" rotation="0 -90 0" nodeId="395">
+          <TransformGroup name="beltEnd6" translation="0 -1.42109e-16 2.83473" nodeId="396"/>
+        </TransformGroup>
+        <TransformGroup name="beltStart8" translation="1.39481 1.17035e-05 4.59036" rotation="0 -90 0" nodeId="397">
+          <TransformGroup name="beltEnd6" translation="0 -1.42109e-16 2.78951" nodeId="398"/>
+        </TransformGroup>
+        <TransformGroup name="beltStart9" translation="1.40826 1.17035e-05 3.48132" rotation="0 -90 0" nodeId="399">
+          <TransformGroup name="beltEnd6" translation="0 -1.42109e-16 2.81965" nodeId="400"/>
+        </TransformGroup>
+        <TransformGroup name="beltStart10" translation="1.37029 1.17035e-05 2.13978" rotation="0 -90 0" nodeId="401">
+          <TransformGroup name="beltEnd6" translation="0 -1.42109e-16 2.78561" nodeId="402"/>
+        </TransformGroup>
+        <Shape shapeId="16" name="beltActivationTrigger" translation="2.84217e-16 0.743789 6.58322" scale="1 1 2.2" visibility="false" kinematic="true" trigger="true" nodeId="403" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+      <Shape shapeId="17" name="dynamicMountTriggerShape" translation="0 -0.360872 -1.413" kinematic="true" compound="true" trigger="true" collisionMask="16777216" nodeId="404" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="support" translation="-0.00213198 0.0382073 4.81" scale="1.24 1 1" nodeId="405">
+        <Shape shapeId="18" name="Supports" nodeId="406" materialIds="31" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="19" name="Front Left Support" translation="0.720407 -0.0684983 -0.0020915" scale="2 2 2" clipDistance="50" nodeId="407" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="20" name="colSupport" translation="3.55271e-17 0.047 0.00540145" scale="1 0.5 1" compoundChild="true" collisionMask="8194" density="10" clipDistance="100" nodeId="408" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="19" name="Front Left Support" translation="-0.727692 -0.0684983 -0.0020915" scale="2 2 2" clipDistance="50" nodeId="409" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="20" name="colSupport" translation="3.55271e-17 0.0466573 0.005" scale="1 0.5 1" compoundChild="true" collisionMask="8194" density="10" clipDistance="100" nodeId="410" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="21" name="rightMudFlap" translation="-0.975 0.749144 -4.576" clipDistance="300" nodeId="411" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="21" name="leftMudFlap" translation="0.97519 0.749 -4.576" clipDistance="300" nodeId="412" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Camera name="camera" translation="0.249555 0.580767 -9.18984" rotation="-137.603 9.05193 180" nodeId="413" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+      <Shape shapeId="22" name="rampcol" translation="-0.007 0.926 -3.345" dynamic="true" collisionMask="2105413" clipDistance="300" nodeId="414" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="23" name="c2" translation="0 -0.367414 4.94437" rotation="-44.1351 -0 0" scale="1 1 0.124969" compoundChild="true" collisionMask="8397061" nodeId="415" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="transform" translation="0.938549 1.5025 8.06254" nodeId="416"/>
+      <Camera name="backupcam" translation="-0.378 3.09 -12.45" rotation="170.144 -4.05576 -180" nodeId="417" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+      <TransformGroup name="rampa1" translation="0.548 0.926 -3.345" nodeId="418">
+        <Shape shapeId="24" name="rampa" clipDistance="1000" nodeId="419" materialIds="34" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="transform" nodeId="420"/>
+        </Shape>
+        <Shape shapeId="25" name="rampa" clipDistance="1000" nodeId="421" materialIds="34" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="transform" nodeId="422"/>
+        </Shape>
+        <Shape shapeId="26" name="c2" compoundChild="true" collisionMask="8397061" nodeId="423" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+      <Shape shapeId="27" name="col1" compoundChild="true" collisionMask="8397061" staticFriction="0" dynamicFriction="0" density="0.001" nodeId="424" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="28" name="col3" compoundChild="true" collisionMask="8397061" staticFriction="0" dynamicFriction="0" density="0.001" nodeId="425" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="23" name="c2" compoundChild="true" collisionMask="8397061" nodeId="426" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="29" name="c2" compoundChild="true" collisionMask="8397061" nodeId="427" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="30" name="c2" compoundChild="true" collisionMask="8397061" nodeId="428" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="left door" translation="1.31 1.196 -7.965" nodeId="429">
+        <TransformGroup name="left doorunited" nodeId="430">
+          <Shape shapeId="31" name="Model0.0_MeshModel0.015" nodeId="431" materialIds="8,17" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="32" name="col3" compoundChild="true" collisionMask="8397061" staticFriction="0" dynamicFriction="0" density="0.001" nodeId="432" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="33" name="plane" translation="-0.698128 1.26 0.014" rotation="90 -0 90" scale="3.006 0.956831 1.229" nodeId="433" materialIds="28" distanceBlending="false"/>
+        </TransformGroup>
+        <TransformGroup name="left doorallied" visibility="false" nodeId="434">
+          <Shape shapeId="31" name="Model0.0_MeshModel0.015" nodeId="435" materialIds="21,17" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="32" name="col3" compoundChild="true" collisionMask="8397061" staticFriction="0" dynamicFriction="0" density="0.001" nodeId="436" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="33" name="plane" translation="-0.691391 1.25243 0.00912405" rotation="90 -0 90" scale="3.006 0.956831 1.21916" nodeId="437" materialIds="28" distanceBlending="false"/>
+        </TransformGroup>
+        <TransformGroup name="left door" visibility="false" nodeId="438">
+          <Shape shapeId="31" name="Model0.0_MeshModel0.015" nodeId="439" materialIds="27,17" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="32" name="col3" compoundChild="true" collisionMask="8397061" staticFriction="0" dynamicFriction="0" density="0.001" nodeId="440" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="33" name="plane" translation="-0.691391 1.25243 0.00912405" rotation="90 -0 90" scale="3.006 0.956831 1.21916" nodeId="441" materialIds="28" distanceBlending="false"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="right door" translation="-1.309 1.129 -7.966" nodeId="442">
+        <TransformGroup name="right doorunited" nodeId="443">
+          <Shape shapeId="34" name="Model0.002_MeshModel0.018" nodeId="444" materialIds="8,17" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="35" name="col3" compoundChild="true" collisionMask="8397061" staticFriction="0" dynamicFriction="0" density="0.001" nodeId="445" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="33" name="plane" translation="0.693771 1.32818 0.014" rotation="90 -0 90" scale="3.00595 0.956831 1.22891" nodeId="446" materialIds="28" distanceBlending="false"/>
+          <Shape shapeId="33" name="plane1" translation="1.32165 1.31101 0.0116192" rotation="-90 -0 0" scale="0.0561073 1 2.99093" nodeId="447" materialIds="17" distanceBlending="false"/>
+        </TransformGroup>
+        <TransformGroup name="right doorallied" visibility="false" nodeId="448">
+          <Shape shapeId="34" name="Model0.002_MeshModel0.018" nodeId="449" materialIds="21,17" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="35" name="col3" compoundChild="true" collisionMask="8397061" staticFriction="0" dynamicFriction="0" density="0.001" nodeId="450" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="33" name="plane" translation="0.698071 1.32818 0.0139168" rotation="90 -0 90" scale="3.00595 0.956831 1.22425" nodeId="451" materialIds="28" distanceBlending="false"/>
+        </TransformGroup>
+        <TransformGroup name="right door" visibility="false" nodeId="452">
+          <Shape shapeId="34" name="Model0.002_MeshModel0.018" nodeId="453" materialIds="27,17" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="35" name="col3" compoundChild="true" collisionMask="8397061" staticFriction="0" dynamicFriction="0" density="0.001" nodeId="454" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="33" name="plane" translation="0.698071 1.32818 0.0139168" rotation="90 -0 90" scale="3.00595 0.956831 1.22425" nodeId="455" materialIds="28" distanceBlending="false"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="baleCastPoints" translation="0 0.94456 -1.24676" nodeId="456">
+        <TransformGroup name="frontRight" translation="-1.258 0.206639 9.175" nodeId="457"/>
+        <TransformGroup name="backLeft" translation="1.25584 -0.172 -6.593" nodeId="458"/>
+        <TransformGroup name="frontRight" translation="-1.258 3 9.175" nodeId="459"/>
+        <TransformGroup name="backLeft" translation="1.256 3 -6.593" nodeId="460"/>
+      </TransformGroup>
+      <TransformGroup name="transform" translation="0.0048107 1.115 7.088" rotation="0 90 0" nodeId="461"/>
+      <TransformGroup name="lights" visibility="false" nodeId="462">
+        <TransformGroup name="deco" nodeId="463">
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.624195 -7.84322" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="464" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="0.885012 0.75443 -7.97609" rotation="0 180 0" scale="0.8 0.8 1" nodeId="465" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="0.724142 0.75443 -7.97609" rotation="0 180 0" scale="0.8 0.8 1" nodeId="466" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="-0.716445 0.75443 -7.97609" rotation="0 180 0" scale="0.8 0.8 1" nodeId="467" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="-0.87793 0.75443 -7.97609" rotation="0 180 0" scale="0.8 0.8 1" nodeId="468" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="1.26846 4.01048 -7.96319" rotation="0 180 0" scale="0.6 0.5 0.2" nodeId="469" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="0.211648 4.01048 -7.96319" rotation="0 180 0" scale="0.6 0.5 0.2" nodeId="470" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="0.00672853 4.01048 -7.96319" rotation="0 180 0" scale="0.6 0.5 0.2" nodeId="471" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="-0.211123 4.01048 -7.96319" rotation="0 180 0" scale="0.6 0.5 0.2" nodeId="472" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="-1.26865 4.01048 -7.96319" rotation="0 180 0" scale="0.6 0.5 0.2" nodeId="473" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" nodeId="474">
+            <Shape shapeId="36" name="coronaRed" translation="-1.287 3.134 -7.975" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="475" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.522 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="476" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.483 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="477" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.447 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="478" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.406 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="479" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.367 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="480" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.328 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="481" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.288 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="482" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.251 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="483" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.213 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="484" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.175 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="485" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" translation="0 -0.951 0" nodeId="486">
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.13435 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="487" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.52204 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="488" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.48317 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="489" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.44714 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="490" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.40642 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="491" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.36742 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="492" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.3277 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="493" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.28776 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="494" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.25075 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="495" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.21338 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="496" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.17462 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="497" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" translation="0 -1.79965 0" nodeId="498">
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.13435 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="499" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.52204 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="500" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.48317 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="501" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.44714 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="502" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.40642 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="503" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.36742 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="504" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.3277 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="505" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.28776 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="506" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.25075 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="507" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.21338 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="508" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.17462 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="509" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" translation="2.57321 -1.79965 0" nodeId="510">
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.13435 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="511" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.52204 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="512" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.48317 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="513" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.44714 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="514" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.40642 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="515" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.36742 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="516" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.3277 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="517" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.28776 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="518" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.25075 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="519" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.21338 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="520" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.17462 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="521" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" translation="2.57321 -0.951 0" nodeId="522">
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.13435 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="523" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.52204 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="524" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.48317 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="525" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.44714 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="526" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.40642 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="527" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.36742 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="528" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.3277 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="529" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.28776 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="530" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.25075 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="531" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.21338 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="532" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.17462 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="533" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" translation="2.57321 0 0" nodeId="534">
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.13435 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="535" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.52204 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="536" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.48317 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="537" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.44714 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="538" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.40642 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="539" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.36742 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="540" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.3277 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="541" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.28776 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="542" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.25075 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="543" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.21338 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="544" materialIds="19" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="36" name="coronaRed" translation="-1.28745 3.17462 -7.97534" rotation="0 180 0" scale="0.4 0.4 0.2" nodeId="545" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.344422 -6.91354" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="546" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.341256 -6.24907" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="547" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.33908 -5.64081" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="548" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.3107 4.01252 -7.65741" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="549" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.3107 4.01252 -0.0081851" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="550" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.3107 4.01252 7.76053" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="551" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.33908 -2.80729" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="552" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.339914 -1.79718" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="553" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.339914 -0.79898" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="554" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.339914 0.203403" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="555" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.339914 1.19686" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="556" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.339914 2.18793" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="557" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.339914 3.18339" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="558" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 0.339914 4.20145" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="559" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 1.18717 5.70135" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="560" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 1.18717 6.47328" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="561" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 1.18717 7.14772" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="562" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="1.36934 1.19219 7.76083" rotation="0 90 0" scale="0.8 0.6 0.2" nodeId="563" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="1.10986 4.01539 8.04251" scale="0.8 0.6 0.2" nodeId="564" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="-1.10774 4.01539 8.04251" scale="0.8 0.6 0.2" nodeId="565" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.30849 4.01252 7.76053" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="566" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.30849 4.01252 -0.0147107" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="567" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.30849 4.01252 -7.65561" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="568" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.628668 -7.84402" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="569" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 -6.91044" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="570" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 -6.24889" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="571" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 -5.65033" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="572" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 -2.80366" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="573" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 -1.80007" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="574" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 -0.79693" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="575" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 0.206513" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="576" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 1.19779" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="577" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 2.19385" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="578" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 3.17848" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="579" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 0.341359 4.2025" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="580" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 1.18806 5.69836" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="581" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 1.18806 6.47484" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="582" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 1.18806 7.15156" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="583" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaOrange" translation="-1.36411 1.18806 7.75943" rotation="0 -90 0" scale="0.8 0.6 0.2" nodeId="584" materialIds="32" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="break" nodeId="585">
+          <Shape shapeId="36" name="coronaRed" translation="0.885012 0.75443 -7.97609" rotation="0 180 0" scale="0.8 0.8 1" nodeId="586" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="0.724142 0.75443 -7.97609" rotation="0 180 0" scale="0.8 0.8 1" nodeId="587" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="-0.716445 0.75443 -7.97609" rotation="0 180 0" scale="0.8 0.8 1" nodeId="588" materialIds="19" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="36" name="coronaRed" translation="-0.87793 0.75443 -7.97609" rotation="0 180 0" scale="0.8 0.8 1" nodeId="589" materialIds="19" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="turn" nodeId="590">
+          <TransformGroup name="left" nodeId="591">
+            <Shape shapeId="37" name="corona_orange9" translation="1.03362 0.752886 -7.96444" rotation="0 180 0" scale="1 1 0.2" nodeId="592" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="right" nodeId="593">
+            <Shape shapeId="37" name="corona_orange9" translation="-1.04 0.752886 -7.964" rotation="0 180 0" scale="1 1 0.2" nodeId="594" materialIds="32" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="reverse" nodeId="595">
+          <Shape shapeId="38" name="light" translation="0.881966 0.617008 -8.00269" rotation="0 180 0" scale="1 0.8 0.2" nodeId="596" materialIds="18"/>
+          <Shape shapeId="38" name="light" translation="-0.872624 0.617008 -8.00269" rotation="0 180 0" scale="1 0.8 0.2" nodeId="597" materialIds="18"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="transform" nodeId="598">
+        <Shape shapeId="39" name="United" nodeId="599" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="40" name="Model0.1_MeshModel0.1" nodeId="600" materialIds="17" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="41" name="Model3.0_MeshModel3.0" nodeId="601" materialIds="20" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="42" name="Model3.1_MeshModel3.1" nodeId="602" materialIds="20" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="43" name="Model0.2_MeshModel0.2" nodeId="603" materialIds="20" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="44" name="Model0.1_MeshModel0.016" nodeId="604" materialIds="17" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="45" name="Model6.0_MeshModel6.006" nodeId="605" materialIds="20" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="39" name="alliedbody" visibility="false" nodeId="606" materialIds="21" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="39" name="atlas" visibility="false" nodeId="607" materialIds="27" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="46" name="Plateau" translation="0 -0.634563 -1.38585" scale="0.993 1 0.907808" nodeId="608" materialIds="4,33" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="33" name="leftWall" translation="1.30037 2.46857 -1.59512" rotation="0 -0 90" scale="3.02141 1 12.4183" nodeId="609" materialIds="28" distanceBlending="false"/>
+        <Shape shapeId="33" name="rightWall" translation="-1.30309 2.46857 -1.59512" rotation="180 -0 90" scale="3.02141 1 12.4183" nodeId="610" materialIds="28" distanceBlending="false"/>
+        <Shape shapeId="33" name="leftfrontWall" translation="-1.30309 2.59968 6.27583" rotation="180 -0 90" scale="2.77304 1 3.33276" nodeId="611" materialIds="28" distanceBlending="false"/>
+        <Shape shapeId="33" name="rightfrontWall" translation="1.30428 2.59968 6.27583" rotation="0 -0 90" scale="2.77304 1 3.33276" nodeId="612" materialIds="28" distanceBlending="false"/>
+        <Shape shapeId="33" name="frontWall" translation="0.00111674 2.6 8.03459" rotation="-90 -0 90" scale="2.773 0.956831 2.4793" nodeId="613" materialIds="28" distanceBlending="false"/>
+        <Shape shapeId="33" name="leftrampWall" translation="1.30433 1.18555 4.64225" rotation="0 47.3522 90" scale="0.222156 0.956831 0.427823" nodeId="614" materialIds="28" distanceBlending="false"/>
+        <Shape shapeId="33" name="rightrampWall" translation="-1.30384 1.18555 4.64225" rotation="-180 47.3522 90" scale="0.222156 0.956831 0.427823" nodeId="615" materialIds="28" distanceBlending="false"/>
+        <Shape shapeId="33" name="roofWall" translation="0.00276672 4.05426 0.0153904" rotation="-180 1.17187e-05 0" scale="2.5558 1 15.8836" nodeId="616" materialIds="28" distanceBlending="false"/>
+      </TransformGroup>
+      <TransformGroup name="attacherJoint" translation="0.00130998 0.988288 7.10733" rotation="0 90 0" clipDistance="200" nodeId="617"/>
+      <TransformGroup name="col" nodeId="618">
+        <Shape shapeId="47" name="tailCol" translation="0 -0.475411 -0.815584" rotation="15 0 0" dynamic="true" compoundChild="true" nodeId="619" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <Shape shapeId="48" name="col_suelo_plataforma_trailer" translation="0 0.968269 -1.36299" scale="1 1 0.88" compoundChild="true" solverIterationCount="190" nodeId="620" materialIds="22" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="Moving Trailers" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+    </Asset>
+    <Files/>
+    <Materials>
+        <Material name="acmat_0" materialId="277" diffuseColor="1 0 0 1" specularColor="0.2 1 0.2"/>
+        <Material name="col" materialId="269" diffuseColor="0.8 0.8 0.8 1"/>
+    </Materials>
+    <Shapes externalShapesFile="col.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="col" nodeId="479">
+            <Shape shapeId="1" name="tailCol" translation="0 2.57944 0.002961" rotation="15 0 0" dynamic="true" compoundChild="true" nodeId="483" materialIds="269" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="2" name="col_suelo_plataforma_trailer" translation="0 0.816475 -0.0297122" scale="1 1 0.88" compoundChild="true" solverIterationCount="190" nodeId="484" materialIds="277" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>
